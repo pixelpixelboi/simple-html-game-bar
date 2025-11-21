@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background: #202020;
+    font-family: Segoe UI, sans-serif;
+    overflow: hidden;
+}
+
+/* GAME BAR TOP OVERLAY */
+#gamebar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    background: rgba(30, 30, 30, 0.85);
+    border-radius: 8px;
+    backdrop-filter: blur(12px);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.gb-button {
+    color: white;
+    padding: 8px 16px;
+    background: rgba(80,80,80,0.4);
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+}
+
+.gb-button:hover {
+    background: rgba(120,120,120,0.5);
+}
+
+/* PANELS */
+.panel {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 260px;
+    background: rgba(20,20,20,0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+.panel-header {
+    cursor: move;
+    padding: 6px;
+    background: rgba(255,255,255,0.05);
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+    border-radius: 4px;
+}
